@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signupSection">
+        <div class="info">
+          <h2>Beat-Bazaar</h2>
+          <p> -> Are you a guitar player? Because you just plucked my heartstrings.</p>
+          <p>-> It's easy to play any musical instrument: all you have to do is touch the right key at the right time and the instrument will play itself. ...</p>
+          <p>-> The greatest musical instrument given to a human being is the voice. ...</p>
+        </div>
+        <form action="#" method="POST" class="signupForm" name="signupform">
+          <h2>Sign Up</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="username" name="username" placeholder="Username" value="" oninput="return userNameValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="password"></label>
+              <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value="" oninput="return passwordValidation(this.value)" required/>
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+            </li>
+            <li id="center-btn">
+              <br><br>
+             <a href="mainpage.html" input type="submit" id="join-btn"  name="Join" alt="Join" value="Join">Join</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <script src="signup.js"> </script>
+</body>
+</html>

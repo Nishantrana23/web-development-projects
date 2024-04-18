@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5502/contact.html">Contact</a></li>
+            <li><a href="mainpage.html">About Us</a></li>
+        
+        </ul>
+        </nav>
+        <div class="search-container">
+          <form>
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+    
+          </form>
+        </div>
+      </header>
+    <div class="cart-container">
+        <div class="cart-header">
+       
+          <h1>Your Cart</h1>
+          <hr>
+        </div>
+        <div class="cart-item">
+          <img src="https://www.musicstores.in/5266-home_default/carlos-marshello-cs39c-acoustic-guitar-red.jpghttps://www.musicstores.in/5266-home_default/carlos-marshello-cs39c-acoustic-guitar-red.jpg" alt="Item 2">
+          <div class="item-details">
+            <h3>Carlos Marshello CS39C Acoustic Guitar</h3>
+            <div class="quantity">
+              <button class="quantity-btn" onclick="decreaseQuantity(2)">-</button>
+              <span id="quantity-2">1</span>
+              <button class="quantity-btn" onclick="increaseQuantity(2)">+</button>
+              <button class="remove-btn" onclick="removeItem(1)">Remove</button>
+            </div>
+            <p class="price">Price of 1: &#8377;8,000.00</p>
+          </div>
+          <div class="item-total">
+            <p class="total-price">&#8377;8,000.00</p>
+          </div>
+
+        </div>
+        <div class="cart-items">
+          <div class="cart-item">
+            <img src="https://www.musicstores.in/8300-home_default/estevam-esv-dominant-44-violin.jpg" alt="Item 1">
+            <div class="item-details">
+              <h3>Estevam ESV-Dominant 4/4 Violin</h3>
+              <div class="quantity">
+                <button class="quantity-btn" >-</button>
+                <span id="quantity-2">1</span>
+                <button class="quantity-btn" >+</button>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <p class="price">Price of 1: &#8377;5000.00</p>
+            </div>
+            <div class="item-total">
+              <p class="total-price">&#8377;5000.00</p>
+            </div>
+
+          </div>
+          <div class="cart-item">
+            <img src="https://www.musicstores.in/9712-home_default/roland-td-02kv-digital-drum-kit.webp" alt="Item 2">
+            <div class="item-details">
+              <h3>Roland TD-02KV Digital Drum Kit</h3>
+              <div class="quantity">
+                <button class="quantity-btn" >-</button>
+                <span id="quantity-2">1</span>
+                <button class="quantity-btn" >+</button>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <p class="price">Price of 1: &#8377;50,915.00</p>
+            </div>
+            <div class="item-total">
+              <p class="total-price">&#8377;50,915.00</p>
+            </div>
+
+          </div>
+          <div class="cart-item">
+            <img src="https://www.musicstores.in/2097-home_default/casio-ctk-2550-portable-keyboard.jpg" alt="Item 3">
+            <div class="item-details">
+              <h3>Casio CTS-200 61Keys Portable Keyboard</h3>
+              <div class="quantity">
+                <button class="quantity-btn" >-</button>
+                <span id="quantity-2">1</span>
+                <button class="quantity-btn" >+</button>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <p class="price">Price of 1: &#8377;8,356.00</p>
+            </div>
+            <div class="item-total">
+              <p class="total-price">&#8377;8,356.00</p>
+            </div>
+
+          </div>
+          
+        </div>
+        <div class="cart-footer">
+            <div class="offers">
+                <p>Additional offers:</p>
+                <ul>
+                  <li style="color:white">Add &#8377;500 worth of items and get 10% discount</li>
+                  <li style="color:#f3f1f0">pay using paytm anf get upto 100&#8377 instant cashback</li>
+                </ul>
+              </div>
+          <br>
+          <div class="discount">
+            <p style="color: #45a049;">Discount: <span id="discount">&#8377;100</span></p>
+          </div>
+          <div class="subtotal">
+            <p style="font-size: 150%;">Subtotal: <span id="subtotal">&#8377;930</span></p>
+          </div>
+          
+          
+        </div>
+        <a href="delivery.html"> <button id="next-button" >Checkout</button></a>
+      </div>
+</body>
+</html>
